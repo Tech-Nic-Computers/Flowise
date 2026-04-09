@@ -38,7 +38,7 @@ RUN pnpm install && \
 RUN chown -R node:node .
 
 # Switch to non-root user (node user already exists in node:20-alpine)
-USER node
+# USER node
 
 EXPOSE 3000
 
