@@ -42,4 +42,4 @@ RUN chown -R node:node .
 
 EXPOSE 3000
 
-CMD [ "pnpm", "start" ]
+CMD sh -c "chown -R node:node /opt/railway/.flowise && pnpm start"
